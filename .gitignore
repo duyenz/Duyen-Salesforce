@@ -1,0 +1,104 @@
+# Salesforce DX specific
+.sfdx/
+.sf/
+
+# Salesforce CLI specific
+.cci/
+.cli/
+
+# Salesforce metadata
+**/profiles/*
+**/settings/*
+
+# Illuminated Cloud (IntelliJ IDEA)
+.idea/
+*.iml
+.project
+.settings/
+IlluminatedCloud/
+
+# VS Code specific
+.vscode/
+.history/
+
+# System Files
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Node.js (for LWC development)
+node_modules/
+package-lock.json
+
+# Local environment files
+.env
+.env.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Salesforce Cache and Retrieved Metadata
+.localdevserver/
+.metadata/
+.jest-test-results.json
+
+# Retrieved source files
+mdapi/
+mdapioutput/
+mdapipackage/
+
+# Destructive changes backup files
+destructiveChanges*.xml
+package*.xml
+
+# Scratch org files
+scratch-org-def.json
+
+# PMD files
+.pmdCache
+.ruleset
+
+# Build files
+build/
+dist/
+
+# Temporary files
+tmp/
+temp/
+
+# Configuration files that might contain sensitive information
+*.key
+*.pem
+*.crt
+*.cer
+*.p12
+*.pfx
