@@ -1,0 +1,30 @@
+{
+    "environment": "uat",
+    "orgType": "sandbox",
+    "instanceUrl": "https://test.salesforce.com",
+    "apiVersion": "59.0",
+    "deploymentSettings": {
+        "testLevel": "RunLocalTests",
+        "checkOnly": true,
+        "ignoreWarnings": false,
+        "rollbackOnError": true
+    },
+    "sourceDirectory": "force-app",
+    "permissionSets": [
+        "UAT_Permission_Set",
+        "BusinessUser_Permission_Set"
+    ],
+    "dataSettings": {
+        "loadTestData": false,
+        "preserveProductionData": true,
+        "anonymizeData": true
+    },
+    "emailSettings": {
+        "emailDeliveryEnabled": false,
+        "redirectEmails": "uat-testing@example.com"
+    },
+    "integrationSettings": {
+        "useTestEndpoints": true,
+        "mockExternalServices": true
+    }
+}

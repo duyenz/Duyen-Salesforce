@@ -1,0 +1,31 @@
+{
+    "environment": "qa",
+    "orgType": "sandbox",
+    "instanceUrl": "https://test.salesforce.com",
+    "apiVersion": "59.0",
+    "deploymentSettings": {
+        "testLevel": "RunLocalTests",
+        "checkOnly": true,
+        "ignoreWarnings": false,
+        "rollbackOnError": true
+    },
+    "sourceDirectory": "force-app",
+    "permissionSets": [
+        "QA_Permission_Set",
+        "TestAutomation_Permission_Set"
+    ],
+    "dataSettings": {
+        "loadTestData": true,
+        "preserveTestUsers": true,
+        "anonymizeData": true
+    },
+    "testSettings": {
+        "runAllTests": true,
+        "parallelTestExecution": true,
+        "maxFailedTests": 0
+    },
+    "validationRules": {
+        "enforceValidationRules": true,
+        "bypassValidationForAdmins": false
+    }
+}

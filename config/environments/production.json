@@ -1,0 +1,41 @@
+{
+    "environment": "production",
+    "orgType": "production",
+    "instanceUrl": "https://login.salesforce.com",
+    "apiVersion": "59.0",
+    "deploymentSettings": {
+        "testLevel": "RunLocalTests",
+        "checkOnly": true,
+        "ignoreWarnings": false,
+        "rollbackOnError": true,
+        "requiredCodeCoverage": 85
+    },
+    "sourceDirectory": "force-app",
+    "permissionSets": [
+        "Production_Admin_Permission_Set",
+        "Standard_User_Permission_Set"
+    ],
+    "securitySettings": {
+        "enforceIPRanges": true,
+        "twoFactorAuth": true,
+        "passwordComplexity": "HIGH"
+    },
+    "deploymentWindow": {
+        "allowedDays": ["Saturday", "Sunday"],
+        "allowedHours": {
+            "start": "22:00",
+            "end": "05:00"
+        }
+    },
+    "approvalRequired": true,
+    "preDeploymentSteps": [
+        "BackupMetadata",
+        "ValidateDeployment",
+        "NotifyStakeholders"
+    ],
+    "postDeploymentSteps": [
+        "VerifyCustomSettings",
+        "ValidateIntegrations",
+        "NotifyCompletion"
+    ]
+}
