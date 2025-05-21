@@ -1,39 +1,18 @@
-# Salesforce DX specific
-.sfdx/
+# This file is used for Git repositories to specify intentionally untracked files that Git should ignore. 
+# If you are not using git, you can delete this file. For more information see: https://git-scm.com/docs/gitignore
+# For useful gitignore templates see: https://github.com/github/gitignore
+
+# Salesforce cache
 .sf/
+.sfdx/
+.localdevserver/
+deploy-options.json
 
-# Salesforce CLI specific
-.cci/
-.cli/
+# LWC VSCode autocomplete
+**/lwc/jsconfig.json
 
-# Salesforce metadata
-**/profiles/*
-**/settings/*
-
-# Illuminated Cloud (IntelliJ IDEA)
-.idea/
-*.iml
-.project
-.settings/
-IlluminatedCloud/
-
-# VS Code specific
-.vscode/
-.history/
-
-# System Files
-.DS_Store
-Thumbs.db
-*.swp
-*~
-
-# Node.js (for LWC development)
-node_modules/
-package-lock.json
-
-# Local environment files
-.env
-.env.local
+# LWC Jest coverage reports
+coverage/
 
 # Logs
 logs
@@ -42,63 +21,25 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Coverage directory used by tools like istanbul
-coverage/
-
 # Dependency directories
-jspm_packages/
+node_modules/
 
-# Optional npm cache directory
-.npm
-
-# Optional eslint cache
+# Eslint cache
 .eslintcache
 
-# Build results
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
-x64/
-x86/
-bld/
-[Bb]in/
-[Oo]bj/
-[Ll]og/
+# MacOS system files
+.DS_Store
 
-# Salesforce Cache and Retrieved Metadata
-.localdevserver/
-.metadata/
-.jest-test-results.json
+# Windows system files
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
 
-# Retrieved source files
-mdapi/
-mdapioutput/
-mdapipackage/
+# Local environment variables
+.env
 
-# Destructive changes backup files
-destructiveChanges*.xml
-package*.xml
-
-# Scratch org files
-scratch-org-def.json
-
-# PMD files
-.pmdCache
-.ruleset
-
-# Build files
-build/
-dist/
-
-# Temporary files
-tmp/
-temp/
-
-# Configuration files that might contain sensitive information
-*.key
-*.pem
-*.crt
-*.cer
-*.p12
-*.pfx
+# Python Salesforce Functions
+**/__pycache__/
+**/.venv/
+**/venv/

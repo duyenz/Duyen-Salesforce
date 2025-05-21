@@ -1,69 +1,18 @@
-# Duyen-Salesforce
+# Salesforce DX Project: Next Steps
 
-## Description
-This repository contains Salesforce development projects and customizations. It includes various Salesforce components, configurations, and implementations.
+Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
 
-## Project Structure
-```
-├── force-app/
-│   └── main/
-│       └── default/
-│           ├── classes/        # Apex Classes
-│           ├── triggers/       # Apex Triggers
-│           ├── layouts/        # Page Layouts
-│           ├── objects/        # Custom Objects
-│           ├── profiles/       # Profiles
-│           └── lwc/           # Lightning Web Components
-├── scripts/                    # Deployment and utility scripts
-└── config/                    # Configuration files
-```
+## How Do You Plan to Deploy Your Changes?
 
-## Setup Instructions
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/duyenz/Duyen-Salesforce.git
-   ```
-2. Set up your Salesforce DX project:
-   ```bash
-   sfdx force:project:create -n Duyen-Salesforce
-   ```
-3. Authorize your Salesforce org:
-   ```bash
-   sfdx force:auth:web:login -a YourOrgAlias
-   ```
+Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
 
-## Development
-- All development should be done in feature branches
-- Follow Salesforce development best practices
-- Ensure proper code coverage for Apex classes
-- Use SFDX for development and deployment
+## Configure Your Salesforce DX Project
 
-## Deployment
-Instructions for deploying to different environments:
+The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
 
-### Sandbox
-```bash
-sfdx force:source:deploy -p force-app -u YourSandboxAlias
-```
+## Read All About It
 
-### Production
-```bash
-sfdx force:source:deploy -p force-app -u YourProdAlias
-```
-
-## Best Practices
-- Write meaningful commit messages
-- Keep components small and focused
-- Follow Salesforce naming conventions
-- Document complex logic and configurations
-- Maintain test coverage above 75%
-
-## Contributing
-1. Create a new feature branch from main
-2. Make your changes
-3. Write/update tests as needed
-4. Submit a pull request
-
-## Contact
-For questions or support, please contact:
-- Duyen Tran (duyen@squareup.com)
+- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
+- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
+- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
+- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
